@@ -93,7 +93,7 @@ age = 'Hello';
 console.log(age);
 console.log(typeof age);
 
-*/
+
 const birthYear = 1991;
 console.log(birthYear);
 console.log(typeof birthYear);
@@ -107,4 +107,37 @@ console.log(typeof testAge);
 testAge = 31;
 
 testName = "George"; // will work but not recommended because it will create a global variable
+*/
 
+
+const firstName = "James";
+const lastName = "Bond";
+
+console.log(firstName + " " + lastName);
+
+let x = 10 + 5;
+console.log(x);
+
+x += 10; // x = x + 10
+console.log(x);
+
+x *= 4; // x = x * 4
+console.log(x);
+
+x++; // x = x + 1
+console.log(x);
+
+x--; // x = x - 1
+x--;
+console.log(x);
+
+
+const ageJonas = 30;
+const ageSarah = 30;
+// Comparison Operators
+console.log(ageJonas >= ageSarah); // >, <, >=, <=
+
+const now = 2021;
+console.log(now);
+
+console.log(now - 1991 > now - 2018);
