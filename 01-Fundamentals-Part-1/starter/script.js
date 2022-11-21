@@ -109,7 +109,7 @@ testAge = 31;
 testName = "George"; // will work but not recommended because it will create a global variable
 */
 
-
+/*
 const firstName = "James";
 const lastName = "Bond";
 
@@ -141,3 +141,117 @@ const now = 2021;
 console.log(now);
 
 console.log(now - 1991 > now - 2018);
+
+*/
+
+
+/*
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
+
+console.log(now - 1991 > now - 2018);
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence
+
+console.log(25 - 10 - 5);
+
+let x, y;
+
+x = y = 25 - 10 - 5; // x = y = 10, x = 10
+
+console.log(x, y);
+
+console.log(ageJonas, ageSarah);
+
+const averageAge = (ageJonas + ageSarah) / 2;
+
+console.log(ageJonas, ageSarah, averageAge);
+
+*/
+
+
+/*
+const markMass = 78;
+const markHeight = 1.69;
+const johnMass = 92;
+const johnHeight = 1.95;
+
+const markBMI = markMass / markHeight ** 2;
+const johnBMI = johnMass / (johnHeight * johnHeight);
+
+const markHigherBMI = markBMI > johnBMI;
+
+console.log(markBMI, johnBMI, markHigherBMI);
+
+*/
+
+/*
+const firstName = "George";
+const job = "Teacher";
+const birthYear = 1994;
+const year = 2022
+
+const george = "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + "!";
+
+console.log(george);
+
+const georgeNew = `I'm ${firstName}, a ${(year - birthYear)} years old ${job}!`;
+
+console.log(georgeNew);
+
+console.log(`Just a string`);
+
+console.log('String with \n\
+multipe \n\
+lines');
+
+console.log(`String with
+multiple
+lines`);
+
+*/
+/*
+const age = 15;
+
+if (age >= 18) {
+    console.log("Person is old enough to drive ??"); // emoji command + control + space
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Person will be able to drive in ${yearsLeft} years`);
+}
+
+
+let century;
+const birthYear = 1992;
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+
+console.log(`Person was born in ${century}`);
+
+*/
+
+
+
+
+const markMass = 78;
+const markHeight = 1.69;
+const johnMass = 120;
+const johnHeight = 1.95;
+
+const markBMI = markMass / markHeight ** 2;
+const johnBMI = johnMass / (johnHeight * johnHeight);
+
+const markHigherBMI = markBMI > johnBMI;
+
+console.log(markBMI, johnBMI, markHigherBMI);
+
+
+if (markHigherBMI) {
+    console.log(`Mark(${markBMI}) has higher BMI then John(${johnBMI})`);
+} else {
+    console.log(`John(${johnBMI}) has higher BMI then Mark(${markBMI})`);
+}
