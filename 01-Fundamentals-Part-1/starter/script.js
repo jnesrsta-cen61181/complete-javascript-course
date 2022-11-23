@@ -235,7 +235,7 @@ console.log(`Person was born in ${century}`);
 */
 
 
-
+/*
 
 const markMass = 78;
 const markHeight = 1.69;
@@ -255,3 +255,19 @@ if (markHigherBMI) {
 } else {
     console.log(`John(${johnBMI}) has higher BMI then Mark(${markBMI})`);
 }
+
+*/
+
+
+
+
+const inputYear = '1991';
+console.log(inputYear + 18); // without conversion string to number, js just add number to the end
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Jonas')); // should retirn NaN, in node it do just null
+console.log(typeof NaN); // NaN is number?
+
+
+console.log(String(23));
+console.log(String(23) + 23);
