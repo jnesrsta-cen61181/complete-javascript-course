@@ -261,6 +261,7 @@ if (markHigherBMI) {
 
 
 
+// conversion
 const inputYear = '1991';
 console.log(inputYear + 18); // without conversion string to number, js just add number to the end
 console.log(Number(inputYear) + 18);
@@ -271,3 +272,12 @@ console.log(typeof NaN); // NaN is number?
 
 console.log(String(23));
 console.log(String(23) + 23);
+
+
+// coercion
+console.log('I am ' + 23 +' years old.');
+
+console.log('I am ' + '23' +' years old.');
+
+// thanks coercion we don't have to use this
+console.log('I am ' + String(23) +' years old.');
